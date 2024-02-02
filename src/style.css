@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap');
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.action-icons {
+  padding: 10px 0 10px 10px;
+}
+
+.id-style, .desc-style {
+  padding-top: 5px;
+  padding-left: 18px;
+}
+
+.fa-trash:hover {
+  scale: 125%;
+}
+
+.fa-arrow-up:hover,
+.fa-arrow-down:hover,
+.fa-arrow-left:hover,
+.fa-arrow-right:hover {
+  scale: 125%;
+}
+
+.blur-effect {
+  filter: blur(4px);
+}
+
+#popup {
+  z-index: 99;
+  animation: shake 0.5s ease-in;
+}
+
+#main-content {
+  transition: filter 0.3s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+      transform: translateX(5px);
+  }
+}
+
+.colorStyle {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-color: gray;
+  cursor: pointer;
+}
+.colorStyle::-webkit-color-swatch {
+  border-radius: 15px;
+  border-color: gray;
+}
+.colorStyle::-moz-color-swatch {
+  border-radius: 15px;
+  border-color: gray;
+}
+
+.colorStyle:hover {
+  scale: 115%;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #9BB2FB;
+  cursor: pointer;
+  border-radius: 50px;
+  height: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+tr.grouped-row {
+  background-color: #171F2B;
+}
+
+tr.grouped-row:nth-child(even) {
+  background-color: #202A38;
+}
+
+tr.grouped-row:hover {
+  background-color: #29374f;
+  cursor: pointer;
+  border-left: 2px solid white;
+}
+
+tr.grouped-row:nth-child(even):hover {
+  background-color: #263142;
+}
+
+.color-button {
+  width: 40px; 
+  height: 40px; 
+  margin-bottom: 8px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  background-color: #4b5563; 
+  border: none;
+  border-radius: 6px; 
+  cursor: pointer;
+}
+
+.color-button:hover {
+  background-color: #6b7280; 
+}
+
+.color-button.clicked {
+  background-color: #2563eb;
+}
+
+.color-button.clicked:hover {
+  background-color: #3b82f6;
+}
